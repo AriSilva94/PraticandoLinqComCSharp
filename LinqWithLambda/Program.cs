@@ -7,7 +7,7 @@ namespace LinqWithLambda
     {
         static void Main(string[] args)
         {
-            var test = new TestSelectMany();
+            var test = new TestOrderBy();
 
             test.Test();
 
