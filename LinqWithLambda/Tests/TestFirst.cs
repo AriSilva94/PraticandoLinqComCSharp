@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace LinqWithLambda.Tests
 {
-    class TestSelect : ITest
+    class TestFirst : ITest
     {
         public void Test()
         {
             var customers = DataBase.DataBase.GetCustomers();
 
-            var secondQuery = customers .Select(c => new { c.Name, c.Age });
+            var firstQuery = customers.FirstOrDefault(c => c.Age > 10);
 
-            foreach (var item in secondQuery)
-            {
-                Console.WriteLine($"{item.Name}, {item.Age}");
-            }
+            Console.WriteLine($"{firstQuery?.Name} - {firstQuery?.Age}");
         }
     }
 }

@@ -48,8 +48,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\ITest.cs" />
+    <Compile Include="Tests\Itest1.cs" />
     <Compile Include="Tests\TestAllCustomers.cs" />
+    <Compile Include="Tests\TestFirst.cs" />
     <Compile Include="Tests\TestSelect.cs" />
+    <Compile Include="Tests\TestSingle.cs" />
+    <Compile Include="Tests\TestTake.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
