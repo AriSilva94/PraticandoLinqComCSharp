@@ -31,10 +31,11 @@ namespace LinqWithLambda.Tests
 
                 foreach (var order in item.AllOrder.OrderBy(c => c.TotalValue))
                 {
-                    Console.WriteLine($"Total value {order.TotalValue.ToString("c2")} in {order.CreatedDate.ToString("dd/MM/yyyy")}");
+                    Console.WriteLine($"Value {order.TotalValue.ToString("c2")} in {order.CreatedDate.ToString("dd/MM/yyyy")}");
                 }
 
-                Console.WriteLine(item.AllOrder.Sum(c => c.TotalValue).ToString("c2"));
+                Console.WriteLine($"Total value {item.AllOrder.Sum(c => c.TotalValue).ToString("c2")}");
+                Console.WriteLine($"Average value {item.AllOrder.Average(c => c.TotalValue).ToString("c2")}");                
             }
         }
     }

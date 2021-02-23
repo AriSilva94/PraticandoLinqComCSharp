@@ -54,6 +54,7 @@
     <Compile Include="Tests\Itest1.cs" />
     <Compile Include="Tests\TestAllCustomers.cs" />
     <Compile Include="Tests\TestFirst.cs" />
+    <Compile Include="Tests\TestGroupBy.cs" />
     <Compile Include="Tests\TestJoin.cs" />
     <Compile Include="Tests\TestOrderBy.cs" />
     <Compile Include="Tests\TestSelect.cs" />
