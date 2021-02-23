@@ -7,7 +7,7 @@ namespace LinqWithLambda
     {
         static void Main(string[] args)
         {
-            var test = new TestTake();
+            var test = new TestJoin();
 
             test.Test();
 
