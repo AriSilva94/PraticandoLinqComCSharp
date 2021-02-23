@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LinqWithLambda.Tests;
+using System;
 
 namespace LinqWithLambda
 {
@@ -10,6 +7,11 @@ namespace LinqWithLambda
     {
         static void Main(string[] args)
         {
+            var test = new TestAllCustomers();
+
+            test.Test();
+
+            Console.ReadLine();
         }
     }
 }
